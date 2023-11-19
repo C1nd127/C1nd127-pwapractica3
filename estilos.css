@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1, h3 {
+    color: #333;
+    text-align: center;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: nowrap; /* Previene el salto de línea */
+    justify-content: center;
+    gap: 15px;
+    overflow-x: auto; /* Permite desplazamiento horizontal si los elementos no caben */
+}
+
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    width: 961px; /* Ancho basado en el tamaño de tu imagen */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el espacio dentro del contenedor */
+}
+
+.producto img {
+    border-radius: 8px;
+    width: 100%; /* Hace que la imagen ocupe el ancho total de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.producto h3 {
+    color: #007bff;
+    margin-top: 10px; /* Espacio arriba del título */
+}
+
+.producto p {
+    color: #666;
+    font-size: 14px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center; /* Centra el botón en la tarjeta */
+    margin-bottom: 10px; /* Espacio debajo del botón */
+}
+
+button:hover {
+    background-color: #218838;
+}
